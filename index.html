@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css"> 
+       
+    </head>
+    <body>
+    <div id="header">
+         <div class="container">
+            <nav>
+               
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Srvices</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+<div class="header-text">
+<p>UI/UX designer</p>
+<h1>Hi, I'm Venkateswarlu<br> from India</h1>
+</div>
+         </div>
+
+    </div> 
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+<img src="background.jpg">
+</div>
+<div class="about-col-2">
+<h1> About Me </h1>
+<p> I am M.venkateswarlu .I was born on 2004 at Endurivaripalem .My parents  is Yogaiah and Anjamma.I am Student
+I currently studying B.TECH from Dhanalakshmi Srinivasan University.
+</p>
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents  active-tab" id="skills" >
+<ul>
+<li><span>UI/UX</span><br>Designing web interface</li>
+<li><span>Python</span><br>Create backend data</li>
+<li><span>Web development</span><br> Designing web interface</li>
+</ul>
+</div>
+<div class="tab-contents" id="education">
+<ul>
+<li><span>2021-present</span><br>Currently studying B.TECH 3rd year</li>
+<li><span>2019-2021</span><br>Indermediate</li>
+<li><span>2018-2019</span><br>SSC</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="services">
+<div class="container">
+<h1 class="sub-title">My Services</h1>
+<div class="services-list">
+<div> 
+<i class="fa fa-code" aria-hidden="true"></i>
+<h2>Web design</h2>
+<p> it is very use full to create the app and developers</p>
+<a href="#">learn more</a>
+</div>
+<div> 
+<i class="fa fa-crop" aria-hidden="true"></i>
+<h2>UI/UX design</h2>
+<p> it is very use full to create the app and developers</p>
+<a href="#">learn more</a>
+</div>
+</div>
+<div id="portfolio">
+<div class="container">
+<h1 class="sub-title">My Project</h1>
+<div class="project-list">
+<div class="project">
+<img src="maddineedi.jpeg"/>
+<div class="layer">
+<h2>Social Media App</h2>
+<p>This app is connects the talented people around the world.Download it from play store.</p>
+<a href="#">**</a>
+</div>
+</div>
+<div class="project">
+<img src="tickets.png"/>
+<div class="layer">
+<h2>Online Tickets App</h2>
+<p>This app is connects the to travelling all  people around the world.Download it from play store.</p>
+<a href="#">**</a>
+</div>
+</div>
+</div>
+<a href="#" class="btn">See more</a>
+</div>
+</div>
+<div id="contact">
+<div class="container">
+<div class="row">
+<div class="contact-left">
+<h1 class="sub-title">Contact Me</h1>
+<p>email:maddinenivenkateswarlu42@gmail.com</p>
+<p>phon:8106086487</p>
+<div class="social-icons">
+<a href="http://facebook.com">f</a>
+<a href="http://linkedin.com">in</a>
+</div>
+<div class="contact-right">
+<form>
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+<button type="submit" class="btn btn2">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents ");
+function opentab(tabname){
+for(tablink of tablinks){
+tablink.classList.remove("active-link");
+}
+for(tabcontent of tabcontents){
+tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+     
+    </body>
+
+    </html>
